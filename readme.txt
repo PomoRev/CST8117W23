@@ -5,7 +5,11 @@ Prof. Frank Emanuel Ph.D.
 
 branches will identify specific lectures and labs
 
-lab class 2:
+lab class 2: 
+
+    added a CSS file to not have stark white blinding us.
+    formfun.html
+    tablefun.htm
 
 
 
