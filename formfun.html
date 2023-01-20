@@ -18,8 +18,40 @@
 <!-- 
     a very simple form to play with elements 
     and HTTP headers (requests) 
+    by default an empty action points to the form itself
 -->
 
+    <form action="" method="get">
+
+        <h3>This form is a GET method form</h3>
+
+        <p class="bodytext">
+            Enter some text: 
+            <input type="text" name="bob" id="firstinput">
+        </p>
+
+        <p class="bodytext">
+            Enter some text: 
+            <input type="text" name="sandra" id="secondinput">
+        </p>
+
+        <button type="submit">You Really Want to Press Me</button>
+
+        
+
+    </form>
+
+    <form action="./formfun.html" method="post">
+
+        <h3>This form is a POST method form</h3>
+
+        <p class="bodytext">
+            Enter some text: 
+            <input type="text" name="jerry" id="thirdinput">
+        </p>
+
+        <button type="submit">Press Me</button>
+    </form>
 
 </body>
 </html>
