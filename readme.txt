@@ -5,5 +5,7 @@ Prof. Frank Emanuel Ph.D.
 
 branches will identify specific lectures and labs
 
-lecture-2:
+lab class 2:
+
+
 

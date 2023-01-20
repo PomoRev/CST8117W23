@@ -1,0 +1,64 @@
+/* 
+    Generic CSS file for initial HTML example
+    Frank Emanuel, Ph.D. 
+*/
+
+* {
+
+    /* By way of demonstrating the principle of modularity in web development I
+    make use of CSS variables for items like colours so that if I change the
+    colour of an element, I can ensure that my entire website has consistent
+    colouring.  */
+
+    --pageBack: rgb(110, 54, 104);
+    --textBody: rgb(241, 241, 241);
+    --textHeader: rgb(245, 113, 31);
+    --justRight: center;
+
+}
+
+/* mobile layout CSS */
+
+@media screen and (max-width: 500px) {
+
+    .bodytext {
+
+        color: brown;
+        font-size: 12pt;
+
+    }
+    
+ }
+
+body {
+
+    /* A font stack allows for browsers that do not have access to all of the fonts 
+    typical on the web. There are other services that allow you to install custom
+    fonts, but you should always have a stack that ends with the default type of 
+    serif or sans-serif. On the web sans-serif is the preferred type of font (this
+    is a difference from print media). */
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+                 'Lucida Grande', 'Lucida Sans Unicode', 
+                 Geneva, Verdana, sans-serif;
+    background-color: var(--pageBack);
+
+}
+
+header, h1 {
+
+    font-size: 32pt;
+    color: var(--textHeader);
+    text-align: center;
+
+}
+
+.bodytext {
+
+    color: var(--textBody);
+    font-size: 16pt;
+
+}
+
+
+
