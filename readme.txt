@@ -10,6 +10,7 @@ lab class 2:
     added a CSS file to not have stark white blinding us.
     formfun.html
     tablefun.htm
+    othertable.html
 
 
 
