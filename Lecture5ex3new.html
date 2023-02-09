@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #gridcontainer {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px 2px;
+        }
+
+        div[class^="element"] {
+            background-color: orange;
+            border: brown 3px solid;
+        }
+
+        .element3 {
+
+            grid-area: 1 / 1 / 1 / 3;
+
+        }
+
+    </style>
+    <title>Grid Fun</title>
+</head>
+<body>
+    <div id="gridcontainer">
+        <div class="element1">A</div>
+        <div class="element2">B</div>
+        <div class="element3">C</div>
+        <div class="element4">D</div>
+        <div class="element5">E</div>
+        <div class="element6">F</div>
+        <div class="element7">G</div>
+    </div>
+</body>
+</html>

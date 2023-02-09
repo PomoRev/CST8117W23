@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>Grid-tastic Fun!</TITLE>
+		<STYLE>
+			.gridcontainer {
+				display: grid;
+				grid-template-columns : 0.5fr 2fr 2fr;
+			}
+			
+			H1 {
+				background-color : blue;
+				border : 3pt black solid;
+				margin : 0;
+				padding : 1em;
+				grid-area: 1/1/2/4; 
+			}
+			
+			NAV {
+				background-color : blue;
+				grid-area: 2/1/4/2;
+			}
+			
+			.navigation {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+			}
+			
+			.content {
+				text-align : center;
+				grid-area: 2/2/3/4;
+			}
+			
+			.image {
+				float: right;
+				justify-self : center;
+				width : 400px;
+			}
+			
+			FOOTER {
+				background-color : blue;
+				grid-area: 3/2/4/4;
+			}
+			
+			BUTTON {
+				font-size : 14pt;
+			}
+			
+			BUTTON:hover {
+				background-color : purple;
+			}
+			
+		</STYLE>
+	</HEAD>
+	<BODY>
+		<DIV class="gridcontainer">
+			<H1>Signs of the End Zombie Apocalypse RPG</H1>
+			<NAV class="navigation">
+				<BUTTON>Button 1</BUTTON>
+				<BUTTON>Button 2</BUTTON>
+				<BUTTON>Button 3</BUTTON>
+			</NAV>
+			<IMG src="signs.jpg" alt="" class="image">
+			<DIV class="content">
+				<P>One of the interesting features of ADHD is the ability to hyper focus on things you really enjoy or find interesting. That is how I managed to pull together one lecture, one RPG campaign setting, and a collaborative fiction blog all in a few days (plus I ran two other RPG nights and we had a really nice social evening with friends in there too).</P>
+
+				<P>Last week I showed up at my friend Richard's place for some gaming. We have an ongoing Call of Cthulhu campaign that meets bi-weekly. This was our off week actually but Richard wanted to try out a new role playing game (RPG) system called the one roll engine (ORE). This is the system used for the game GODLIKE which is a WWII super heroes game. That group is big on historical contexts - we play Call of Cthulhu in 1920s Alymer and the GM puts a lot of work into the historical details. Richard wanted to try the NEMESIS version of ORE which is meant for horror genre role playing - we re-ran one of our Cthulhu scenarios with the system.</P>
+
+				<P>ORE uses 1 to 10 ten-sided dice for each player. That is all. And one roll tells you a lot of detail. For example in combat one contested roll (two people roll their dice) you can tell who hit, who hit first, how hard they hit, and even where they hit. If they were also dodging you can find out how that went too. It is pretty elegant. You basically are looking for sets of numbers. It is also quite a bit faster than anything I've played before. Plus it feels awesome when you have 6 or more dice rolling off your hand.</P>
+
+				<P>I wasn't convinced that it would be a good replacement for the Cthulhu campaign, we've a lot invested already in our characters. But it solved a problem we had with the idea of running a zombie apocalypse RPG. In a zombie apocalypse characters are going to die, a lot, and they are not coming back like in D&D. So when you have a system where you spend oodles of time lovingly tweaking your character it sucks to not make it past the first hour. NEMESIS characters, especially when you drop the spells stuff, come together quick. So if you die, no big deal, you can find another character holed up in a house not far away, and bang you are back in the game. Actually I've made it even easier by creating a book of character archetypes - each having the same about of points in stats and skills and a third or less of those points are not already allotted already - so you pick an archetype and spread out a few skill points. Easy. Also I am having the players operate two characters at all times - they can switch between them, but only have to logistically operate one. If they die then they can keep playing while the story leads them to another.</P>
+
+				<P>Richard has taken to using customized FIASCO setups to establish the relationships between each of the characters. FIASCO is a great one night RPG that is more of an exercise in improv than anything else. With the right group FIASCO is an amazing game. So we set up a zombie apocalypse FIASCO scenario which we will run to relate the players characters to each other. I wrote an anatomy of the disease (I like the disease angle best for zombies) which details how it is transmitted and how it progresses in a person. Now I have zombies. Then I fleshed out a 44 page worldbook which includes: the player information (archetypes, etc.); rules tweaks; the FIASCO setup; NPC templates; collection of significant NPCs; rules for scavanging and travelling; and a chart that details survival items in terms of scarcity and value (for bartering). Right now I have place holder art all through it - stuff off google search - but if I make this into something publishable I'll try to get Richard to illustrate it. He has a game company and lots of experience doing this stuff. We'd probably not be able to charge much (if anything) because the NEMESIS rules are actually free!</P>
+
+				<P>I also decided that with such a rich storytelling opportunity, it would be fun to create a survivors website and invite people to participate by commenting on posts. So I set up Signs of the End which has a great but nasty URL! So far it follows the trials of a few people in Maine, our game will start at a high school in Lewiston, ME. I did a bit of scene prep, getting familiar with the area through google maps and searching things like gun laws in Maine. We will make good use of technology in this game. If you want to join in - why not have some fun on the blog? If you want to run your own campaign why not down load the NEMESIS rules and I could be convinced to let you have a beta copy of the setting book.</P>
+			</DIV>
+
+			<FOOTER>
+				Frank Emanuel can be reached at <A HREF="mailto:emanuef@algonquincollege.com">emanuef@algonquincollege.com</A>
+			</FOOTER>
+		</DIV>
+	</BODY>
+</HTML>
