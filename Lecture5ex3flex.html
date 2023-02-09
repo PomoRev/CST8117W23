@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<STYLE>
+			H1 {
+				text-align: center;
+			}
+			
+			DIV {
+				background: #4CAF50;
+				padding: 5px;
+			}
+			
+			.example {
+				background: blue;
+
+				display: flex;
+				flex-direction: column;
+				width: 50%;
+			}	
+			
+			DIV[class^="tbox"] {
+				background-color: black;
+				color: white;
+				width: 100px;
+				line-height: 75px;
+				font-size: 30px;
+				margin: 10px;
+				text-align: center;
+			}
+
+									
+			.picturegallery {
+				display: flex;
+				flex-flow: row wrap-reverse;
+				justify-content: space-evenly;
+			}
+			
+			P {
+				font-size : 14pt;
+			}
+			
+			.image {
+				border: 4px solid black;
+				padding: 2px;
+				margin: 2px;
+				width: 100px;
+			}			
+		</STYLE>
+	</HEAD>
+	<BODY>
+
+		<H1>FUN WITH CSS FLEX</H1>
+
+		<DIV class="picturegallery">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">
+			<IMG class="image" src="small_frank.jpg" alt="Professor">	
+			<IMG class="image" src="small_frank.jpg" alt="Professor">	
+			<IMG class="image" src="small_frank.jpg" alt="Professor">	
+			<IMG class="image" src="small_frank.jpg" alt="Professor">				
+		</DIV>
+		
+		<BR>
+		
+		<DIV class="example">
+			<DIV class="tboxa">A</DIV>
+			<DIV class="tboxb">B</DIV>
+			<DIV class="tboxc">C</DIV>
+		</DIV>
+		
+	</BODY>
+</HTML>
