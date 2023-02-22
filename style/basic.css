@@ -1,0 +1,56 @@
+body {
+
+    --backgroundColor: rgba(227, 224, 224, 0.928);
+    --backgroundElement: rgb(158, 155, 152);
+    --defaultTextColor: rgb(2, 1, 15);
+    --buttonOrange: rgb(94, 61, 1);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    
+    background-color: var(--backgroundColor);
+    color: var(--defaultTextColor);
+
+    padding: 10px;
+    
+}
+
+header, footer {
+
+    background-color: var(--backgroundElement);
+    border: var(--defaultTextColor) solid 3pt;
+
+    padding: 4px 0px;
+    text-align: center;
+
+}
+
+button {
+
+    background-color: var(--backgroundElement);
+
+    font-size: 14pt;
+    font-weight: bold;
+
+    border-radius: 30px;
+    border: 4px solid var(--defaultTextColor);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+
+    transition: all 1000ms ease;
+
+}
+
+button:hover {
+
+    color: var(--buttonOrange);
+    border-color: var(--buttonOrange);
+    
+}
+
+button:active {
+
+    border-color: var(--defaultTextColor);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-size: 20pt;
+            font-weight: bold;
+        }
+
+        #red {
+            background-color: red;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #yellow {
+            background-color: yellow;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #green {
+            background-color: green;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #controls {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            height: 60px;
+            width: 100px;
+        }
+
+        .flexed {
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .redbutton {
+            background-color: red;
+        }
+
+        .yellowbutton {
+            background-color: yellow;
+        }
+
+        .greenbutton {
+            background-color: green;
+        }
+
+        button {
+            border: solid white 3px;
+        }
+
+        button:hover {
+            border: solid black 3px;
+        }
+
+    </style>
+
+    <script>
+
+        function grab (colour) {
+            document.getElementById('textbox').value = document.getElementById(colour).innerText;
+        }
+
+        function writetext (colour) {
+            document.getElementById(colour).innerText = document.getElementById('textbox').value;
+        }
+
+    </script>
+    
+    <title>DOM Traversal Exercise</title>
+</head>
+<body>
+    <h1>DOM Traversal Example</h1>
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="controls">
+
+        <div class="flexed">
+            <button class="redbutton" onclick="grab('red');"><img src="images/grab.png" alt="grab red text"></button>
+            <button class="yellowbutton" onclick="grab('yellow');"><img src="images/grab.png" alt="grab yellow text"></button>
+            <button class="greenbutton" onclick="grab('green');"><img src="images/grab.png" alt="grab green text"></button>
+        </div>
+
+        <div class="flexed">
+            <button class="redbutton" onclick="writetext('red');"><img src="images/write.png" alt="write red box"></button>
+            <button class="yellowbutton" onclick="writetext('yellow');"><img src="images/write.png" alt="write yellow box"></button>
+            <button class="greenbutton" onclick="writetext('green');"><img src="images/write.png" alt="write green box"></button>
+        </div>
+
+        <input type="text" name="textholder" id="textbox">
+
+        <p> 
+            Click the grab button to grab text from an area. 
+            Click the write button to put text into an area.
+            Enter text into the field.
+        </p>
+    </div>
+</body>
+</html>
