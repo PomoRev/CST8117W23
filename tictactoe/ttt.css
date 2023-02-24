@@ -1,0 +1,185 @@
+.rowofboxes {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+div[id^="line"] {
+
+    display: none;
+    background-color: red;
+    position: fixed;
+    opacity: 50%;
+    height: 15px;
+    width: 223px;
+
+}
+
+#line2 {
+    transform: translate(0px, 140px) rotate(90deg);
+}
+
+#line3 {
+    transform: translate(98px, 140px) rotate(90deg);
+}
+
+#line4 {
+    transform: translate(0px, 47px);
+}
+
+#line5 {
+    transform: translate(0px, 45px);
+}
+
+.clickable {
+
+    display: block;
+    width: 48pt;
+    height: 48pt;
+    text-align: center;
+    font-size: 49pt;
+    padding: 10pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+
+}
+
+.clickable:hover {
+
+    background-color: rgba(238, 40, 70);
+
+}
+
+#square1 {
+
+    border-bottom: solid black 3pt;
+    border-right: solid black 3pt;
+
+}
+
+#square2 {
+
+    border-bottom: solid black 3pt;
+    border-right: solid black 3pt;
+    border-left: solid black 3pt;
+
+}
+
+#square3 {
+
+    border-bottom: solid black 3pt;
+    border-left: solid black 3pt;
+
+}
+
+#square4 {
+
+    border-bottom: solid black 3pt;
+    border-right: solid black 3pt;
+    border-top: solid black 3pt;
+
+}
+
+#square5 {
+
+    border: solid black 3pt;
+
+}
+
+#square6 {
+
+    border-bottom: solid black 3pt;
+    border-left: solid black 3pt;
+    border-top: solid black 3pt;
+
+}
+
+#square7 {
+
+    border-right: solid black 3pt;
+    border-top: solid black 3pt;
+
+}
+
+#square8 {
+
+    border-left: solid black 3pt;
+    border-right: solid black 3pt;
+    border-top: solid black 3pt;
+
+}
+
+#square9 {
+
+    border-left: solid black 3pt;
+    border-top: solid black 3pt;
+
+}
+
+p, h1 {
+
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+h1 {
+    color: darkblue;
+}
+
+p, #messageBox {
+
+    font-size: 14pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+
+}
+
+#messageBox, .centeredelement {
+    text-align: center;
+    height: 2em;
+}
+
+button {
+    margin: 20px;
+    padding: 8px;
+    font-size: 14pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    background-color: wheat;
+    border-radius: 8px;
+}
+
+.scorecard {
+
+    width: 320px;
+    margin: auto;
+	padding: 10px;
+    border: black 3px solid;
+    position: fixed;
+    border-radius: 12%;
+    background-color: #d4f7cd;
+    left: -288px;
+
+    transition: left;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+
+}
+
+.scorecard:hover, .scorecardpinned {
+
+    left: -10px;
+
+}
+
+#pinbox {
+
+    position: fixed;
+    transform: translate(320px, 10px);
+}

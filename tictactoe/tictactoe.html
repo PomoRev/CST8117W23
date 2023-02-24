@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="ttt.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe the Game</h1>
+    <p>
+        The game of tic-tac-toe is played in rounds. Players 
+        take turns selecting squares in the 3 by 3 grid which
+        places their symbol of an X or an O in the box. A box 
+        can only be selected once. If a player manages to get a line 
+        of three of their symbols in a row (horizontally or diagonally) 
+        then they win the game. If all the squares are filled without
+        a winner, the game is a tie and will simply reset. 
+    </p>
+    <p>Have fun!</p>
+    <hr>
+    <div class="scorecard">
+
+        <input type="checkbox" id="pinbox" onclick="togglePinned();" unchecked>
+
+        <h3>Game Score</h3>
+        <p id="xScore">Player X has 0 points.</p>
+        <p id="oScore">Player O has 0 points.</p>
+        <button onclick="resetScore();">Reset Score</button>
+
+
+    </div>
+    <div id="messageBox">Player X starts the game, choose a box.</div>
+
+    <div id="gameboard">
+        <div id="toprow" class="rowofboxes">
+            <div id="line1" class="line"></div>
+            <div id="square1" class="clickable"></div>
+            <div id="line2" class="line"></div>
+            <div id="square2" class="clickable"></div>
+            <div id="line3" class="line"></div>
+            <div id="square3" class="clickable"></div>
+        </div>
+    
+        <div id="middlerow" class="rowofboxes">
+            <div id="line4" class="line"></div>
+            <div id="square4" class="clickable"></div>
+            <div id="square5" class="clickable"></div>
+            <div id="square6" class="clickable"></div>
+        </div>
+    
+        <div id="bottomrow" class="rowofboxes">
+            <div id="line5" class="line"></div>
+            <div id="square7" class="clickable"></div>
+            <div id="square8" class="clickable"></div>
+            <div id="square9" class="clickable"></div>
+        </div>
+    </div>
+
+
+    <div class="centeredelement">
+        <button onclick="resetGame();">RESET</button>
+    </div>
+
+    <script src="ttt.js"></script>
+</body>
+</html>
