@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <title>DOM Experiments</title>
+</head>
+<body id="main">
+    <h1>What Kind of Monkey?</h1>
+    <img class="monkey" src="./images/monkey1.jpg" width="200">
+    <img class="monkey" src="./images/monkey2.jpg" width="200">
+    <img class="monkey" src="./images/monkey3.jpg" width="200">
+    <img class="monkey" src="./images/monkey4.jpg" width="200">
+
+    <script>
+        var currentImage = 0;
+        cycle();		
+
+        // cycle through the images
+
+        function cycle(){
+            let pics = document.getElementsByClassName("monkey");
+
+            for (pic of pics){
+                pic.style.display = "none";
+            }
+                
+            if (currentImage == pics.length){
+                currentImage = 0; 
+            }
+            
+            pics[currentImage++].style.display = "block";
+
+            setTimeout(cycle, 2000);
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<HTML lang="en">
+	<HEAD>
+        <meta name="author" content="Frank Emanuel">
+        <meta name="email" content="emanuef@algonquincollege.com">
+		<TITLE>Frank Co. Educational</TITLE>
+		<STYLE>
+		
+			BODY {
+				font-size : 2vw;
+			}
+			
+			H1 	{
+				font-size : 3vw;
+			}
+			
+			HEADER	{
+				background-color: #023398;
+				font-family: "Palatino", Times, serif;
+				text-align: right;
+				color: white;
+				margin-right: 5pt;
+				padding: 10px;
+			}
+			
+			.logo {
+				font-weight: bold;
+				font-size: 10vw;
+				line-height: 1vw;
+				margin: 4vw;
+				margin-right: 5pt;
+			}
+			
+			.slogan {
+				font-size: 2vw;
+				font-style: italic;
+				line-height: 1vw;
+				margin: 3vw;
+			}
+			
+			.flexnav {
+				display: flex;
+				justify-content: space-around;
+				margin: 4px;
+				margin-right: 5pt;
+				margin-left: 0;
+				background-color: #023398;
+				font-family: Arial, sans-serif;
+				font-size: 2vw;
+			}
+			
+			.navbutton a:link {
+				text-decoration: none;
+				color: white;
+			}
+			
+			.navbutton a:visited {
+				text-decoration: none;
+				color: white;
+			}
+			
+			.navbutton a:hover {
+				text-decoration: none;
+				color: #dbfeff;
+			}
+			
+			.navbutton a:active {
+				text-decoration: none;
+				color: white;
+			}
+			
+			.content {
+					
+			}
+			
+			.contentImage {
+				display : float;
+				width : 20%;
+				float : right;
+			
+			}
+			
+			FOOTER	{
+				background-color: #023398;
+				font-family: "Palatino", Times, serif;
+				text-align: center;
+				color: white;
+				margin-right: 5pt;
+				font-size: 1.5vw;
+			}
+			
+			INPUT {
+				font-size : 1.5vw;
+			
+			}
+			
+		</STYLE>
+		<SCRIPT>
+			function suggest(){
+			
+				if ((fname.value != "") && (lname.value != "")){
+					if (nname.value == ""){
+						suggestion.innerHTML = "suggested nickname";
+						nname.value = fname.value.charAt(0) + lname.value;
+					}else{
+						suggestion.innerHTML = "";
+					}
+				}	
+			}
+			
+			function validate(){
+							
+				//grab the inputs to test
+				var results = document.getElementById("appForm");
+				let error = false;
+				for (let i = 0; i < results.length; i++){
+					results.elements[i].style.background = "white";
+					if (results.elements[i].value == ""){
+						results.elements[i].style.background = "red";
+						error = true;
+					} else if (results.elements[i].name == "email"){
+						
+						let regexfilter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+						
+						if (!regexfilter.test(results.elements[i].value)){
+							error = true;
+							badAddress.innerHTML = "Requires a legitimate email address.";
+							results.elements[i].style.background = "orange";
+						} else {
+							badAddress.innerHTML = "";
+						}
+					}
+				}
+				
+				if (error){
+					warning.innerHTML = "Please fill in indicated fields.";
+				}
+				
+				return (!error);
+			
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<DIV class="gridcontainer">		
+			<HEADER>
+				<P class="logo">Frank Co.</P>
+				<P class="slogan">Equipping you for the future! </P>
+			</HEADER>
+
+			<NAV>
+				<DIV class="flexnav">
+					<DIV class="navbutton"><A href="company.html">Our Company</A></DIV>
+					<DIV class="navbutton"><A href="educators.html">Our Educators</A></DIV>
+					<DIV class="navbutton"><A href="courses.html">Our Courses</A></DIV>
+					<DIV class="navbutton"><A href="contact.html">Contact Us</A></DIV>
+					<DIV class="navbutton"><A href="login.html">Login</A></DIV>
+				</DIV>
+			</NAV>
+			
+			<DIV class="content">
+			
+				<IMG class="contentImage" alt="training" src="./images/instructor.png">
+			
+				<H1>Newsletter and Forum Sign Up</H1>
+				
+				<P>At Frank Co. we value your opinions. Come join us in our user forum and receive the latest newsletter right to your inbox. We are here to equip you for the future.</P>
+				
+				<FORM id="appForm" action="" onsubmit="return validate()" method="POST">
+					First name: <INPUT type="text" name="firstName" id="fname" autocomplete="off" onchange="suggest()"><BR>
+					Last name: <INPUT type="text" name="lastName" id="lname" autocomplete="off" onchange="suggest()"><BR>
+					Forum nickname: <INPUT type="text" name="nickName" id="nname" autocomplete="off">
+					<SPAN id="suggestion"></SPAN><BR>
+					Email address: <INPUT type="text" name="email" autocomplete="off"><SPAN id="badAddress"></SPAN><BR>
+					<INPUT type="submit" value="Submit"><BR>
+					<SPAN id="warning"></SPAN>
+				</FORM>
+
+			</DIV>
+
+			<FOOTER>
+				<P>Frank Co. is a registered trade-mark of no one in particular.</P>
+			<FOOTER>
+		</DIV>
+	</BODY>
+</HTML>

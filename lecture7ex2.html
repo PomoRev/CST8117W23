@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <title>DOM Experiments</title>
+</head>
+<body>
+    <h1>You know you want to click this</h1>
+    <a href="https://www.w3schools.com" id="somelink">tutorials</a>
+    <br>
+    <a href="http://www.librarything.com/catalog/pomorev/yourlibrary" id="someotherlink">my library</a>
+    <br>
+    <a href="https://watch.lolesports.com/home">the games</a>
+    <hr>
+    <script> 
+         var url = document.links.someotherlink.href;
+		 document.write('The URL is: ' + url + '<br>');
+
+         url = somelink.href;
+         document.write('The URL is: ' + url + '<hr>');
+
+         url = document.getElementById('somelink').href;
+	 document.write('The URL is: ' + url + '<hr>');
+			
+		var urls = document.links;
+		
+        for (url of urls){
+            document.writeln('-> ' + url.href + '<br>');
+        }	
+
+
+        for (let i = 0; i < document.links.length; i++){
+            document.writeln ('#' + (i + 1) + ': ' + document.links[i].href + 'link ' + '<br>');	
+        }
+
+    </script>
+</body>
+</html>

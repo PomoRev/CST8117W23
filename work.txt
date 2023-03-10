@@ -1,0 +1,55 @@
+any time you change a number display the new number
+
+existing number  = 0 (initialized)
+
+if I press a number
+
+    existing number = (existing number X 10) + number
+
+    display the existing number
+
+
+if I press an operator or an =
+
+    if there is an operator stored
+
+        if it is a +
+            old number = existing number + old number
+
+        if it is a - 
+            old number = old number - existing number
+
+        if it is a /
+            old number =  old number / existing number
+
+        if it is a *
+            old number = existing number * old number
+
+        existing number = 0
+        display the old number
+        
+        
+    put the operator (+,-,/,X) in existing operator
+
+    if operator is =
+
+        clear out the operator
+        clear out the old number
+
+    if operator is CLEAR 
+
+        set old number and existing number to 0
+        set clear the operator
+
+        display existing number
+
+        
+
+
+
+
+
+
+
+
+
